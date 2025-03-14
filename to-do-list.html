@@ -4,65 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple To-Do List</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #1d1d1d;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      padding-bottom: 50px; /* Equal to footer height */
-      box-sizing: border-box;
-      margin: 0;
-    }
-
-    .container {
-      background-color: rgb(249, 126, 31);
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(254, 253, 253, 0.243);
-      width: 300px;
-    }
-
-    h1 {
-      text-align: center;
-      font-size: 24px;
-    }
-
-    input[type="text"] {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-    }
-
-    .task {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px;
-      background-color: #e0e0e0;
-      margin-bottom: 5px;
-      border-radius: 5px;
-    }
-
-    .completed {
-      text-decoration: line-through;
-      color: gray;
-    }
-
-    footer {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-    }
-  </style>
 </head>
 <body>
   <div class="container">
@@ -75,28 +16,5 @@
     © 2025 Vivien Vanijankul. All rights reserved.
   </footer>
 
-  <script>
-    const taskInput = document.getElementById('taskInput');
-    const taskList = document.getElementById('taskList');
-
-    taskInput.addEventListener('keypress', function(event) {
-      if (event.key === 'Enter' && taskInput.value.trim() !== '') {
-        addTask(taskInput.value);
-        taskInput.value = '';
-      }
-    });
-
-    function addTask(taskText) {
-      const taskDiv = document.createElement('div');
-      taskDiv.classList.add('task');
-      taskDiv.innerHTML = `<span>${taskText}</span> <button onclick="completeTask(this)">✔️</button>`;
-      taskList.appendChild(taskDiv);
-    }
-
-    function completeTask(button) {
-      const task = button.parentElement;
-      task.classList.toggle('completed');
-    }
-  </script>
 </body>
 </html>
