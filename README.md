@@ -6,6 +6,7 @@
   <li>A list to display tasks</li>
   <li>Mark tasks as completed</li>
   <li>Basic CSS styling</li>
+  <li>UI Design, Theme and Background</li>
 </ul>
 <p>📚 Tech Stack:</p>
 <ul>
