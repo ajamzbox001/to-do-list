@@ -1,6 +1,6 @@
 # To-Do List Web Page
 
-<p>✅ Features: </p>
+<p>✅ Features : </p>
 <ul>
   <li>Simple input field to add tasks.</li>
   <li>A list to display tasks.</li>
@@ -8,7 +8,7 @@
   <li>Basic CSS styling.</li>
   <li>UI Design, Theme and Background.</li>
 </ul>
-<p>📚 Tech Stack: </p>
+<p>📚 Tech Stack : </p>
 <ul>
   <li>HTML (for structure).</li>
   <li>CSS (for styling).</li>
